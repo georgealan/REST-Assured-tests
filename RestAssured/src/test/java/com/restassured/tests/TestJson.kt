@@ -7,10 +7,7 @@ import io.restassured.response.Response
 import org.hamcrest.Matchers
 import org.junit.Assert
 import org.junit.jupiter.api.Test
-import java.math.BigDecimal
-import java.math.MathContext
 import java.util.*
-import kotlin.collections.ArrayList
 
 class TestJson {
 
@@ -117,7 +114,7 @@ class TestJson {
     }
 
     /**
-     * Podemos unir o poder das consiltas avançadas com o JsonPath para facilitar, pois
+     * Podemos unir o poder das consultas avançadas com o JsonPath para facilitar, pois
      * unindo podemos quebrar o retorno em um tipo de objeto/atributo para poder utilizar
      * com o Assert do Junit de forma mais simples.
      * Abaixo quebramos uma consulta e tipamos o retorno como um ArrayList(String) e com isso podemos trabalhar
