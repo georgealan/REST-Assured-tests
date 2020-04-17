@@ -1,60 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.restassured.tests.TestXml" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-10T02:15:39" hostname="DESKTOP-K3T435G" time="3.088">
+<testsuite name="com.restassured.tests.TestXml" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-10T20:36:33" hostname="DESKTOP-K3T435G" time="3.363">
   <properties/>
-  <testcase name="trabalhando com xml()" classname="com.restassured.tests.TestXml" time="3.088"/>
-  <system-out><![CDATA[23:15:41.180 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://restapi.wcaquino.me:443
-23:15:41.206 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restapi.wcaquino.me:443
-23:15:42.009 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
-23:15:42.011 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-23:15:42.012 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
-23:15:42.012 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
-23:15:42.013 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
-23:15:42.013 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /usersXML/3 HTTP/1.1
-23:15:42.013 [Test worker] DEBUG org.apache.http.wire -  >> "GET /usersXML/3 HTTP/1.1[\r][\n]"
-23:15:42.015 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
-23:15:42.016 [Test worker] DEBUG org.apache.http.wire -  >> "Host: restapi.wcaquino.me[\r][\n]"
-23:15:42.016 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
-23:15:42.016 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)[\r][\n]"
-23:15:42.016 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-23:15:42.016 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
-23:15:42.017 [Test worker] DEBUG org.apache.http.headers - >> GET /usersXML/3 HTTP/1.1
-23:15:42.017 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
-23:15:42.017 [Test worker] DEBUG org.apache.http.headers - >> Host: restapi.wcaquino.me
-23:15:42.017 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
-23:15:42.017 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
-23:15:42.017 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
-23:15:42.185 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
-23:15:42.186 [Test worker] DEBUG org.apache.http.wire -  << "Server: nginx/1.12.1 (Ubuntu)[\r][\n]"
-23:15:42.186 [Test worker] DEBUG org.apache.http.wire -  << "Date: Fri, 10 Apr 2020 02:15:41 GMT[\r][\n]"
-23:15:42.186 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/xml; charset=utf-8[\r][\n]"
-23:15:42.186 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 191[\r][\n]"
-23:15:42.186 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
-23:15:42.187 [Test worker] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
-23:15:42.187 [Test worker] DEBUG org.apache.http.wire -  << "ETag: W/"bf-GkzkoDOiiWx4U7XZfTIuCwRGnoc"[\r][\n]"
-23:15:42.187 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
-23:15:42.187 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << Server: nginx/1.12.1 (Ubuntu)
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << Date: Fri, 10 Apr 2020 02:15:41 GMT
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/xml; charset=utf-8
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 191
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << X-Powered-By: Express
-23:15:42.188 [Test worker] DEBUG org.apache.http.headers - << ETag: W/"bf-GkzkoDOiiWx4U7XZfTIuCwRGnoc"
-23:15:42.192 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
-23:15:42.208 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
-23:15:42.208 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-23:15:42.383 [Test worker] DEBUG org.apache.http.wire -  << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "<user id="3">[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "    <name>Ana Julia</name>[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "    <age>20</age>[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "    <filhos>[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "        <name>Zezinho</name>[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "        <name>Luizinho</name>[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "    </filhos>[\n]"
-23:15:42.384 [Test worker] DEBUG org.apache.http.wire -  << "</user>"
-23:15:42.385 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@334435d
-23:15:42.386 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+  <testcase name="fazendo pesquisas avancadas com xmlPath unindo Kotlin()" classname="com.restassured.tests.TestXml" time="3.363"/>
+  <system-out><![CDATA[17:36:35.184 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://restapi.wcaquino.me:443
+17:36:35.238 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to restapi.wcaquino.me:443
+17:36:36.333 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+17:36:36.335 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:36:36.335 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:36:36.335 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:36:36.336 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:36:36.336 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /usersXML HTTP/1.1
+17:36:36.336 [Test worker] DEBUG org.apache.http.wire -  >> "GET /usersXML HTTP/1.1[\r][\n]"
+17:36:36.337 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+17:36:36.337 [Test worker] DEBUG org.apache.http.wire -  >> "Host: restapi.wcaquino.me[\r][\n]"
+17:36:36.337 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:36:36.337 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)[\r][\n]"
+17:36:36.337 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+17:36:36.337 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:36:36.337 [Test worker] DEBUG org.apache.http.headers - >> GET /usersXML HTTP/1.1
+17:36:36.337 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+17:36:36.338 [Test worker] DEBUG org.apache.http.headers - >> Host: restapi.wcaquino.me
+17:36:36.338 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:36:36.338 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+17:36:36.338 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+17:36:36.525 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:36:36.526 [Test worker] DEBUG org.apache.http.wire -  << "Server: nginx/1.12.1 (Ubuntu)[\r][\n]"
+17:36:36.526 [Test worker] DEBUG org.apache.http.wire -  << "Date: Fri, 10 Apr 2020 20:36:36 GMT[\r][\n]"
+17:36:36.527 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/xml; charset=utf-8[\r][\n]"
+17:36:36.527 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 588[\r][\n]"
+17:36:36.527 [Test worker] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+17:36:36.527 [Test worker] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+17:36:36.527 [Test worker] DEBUG org.apache.http.wire -  << "ETag: W/"24c-vutxf6Hn0R9xWzsxnc0VxPq0wZQ"[\r][\n]"
+17:36:36.527 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:36:36.528 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << Server: nginx/1.12.1 (Ubuntu)
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << Date: Fri, 10 Apr 2020 20:36:36 GMT
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/xml; charset=utf-8
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 588
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << Connection: keep-alive
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << X-Powered-By: Express
+17:36:36.528 [Test worker] DEBUG org.apache.http.headers - << ETag: W/"24c-vutxf6Hn0R9xWzsxnc0VxPq0wZQ"
+17:36:36.533 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+17:36:36.550 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+17:36:36.551 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+17:36:36.650 [Test worker] DEBUG org.apache.http.wire -  << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+17:36:36.650 [Test worker] DEBUG org.apache.http.wire -  << "<users>[\n]"
+17:36:36.650 [Test worker] DEBUG org.apache.http.wire -  << "    <user id="1">[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "        <name>Jo[0xc3][0xa3]o da Silva</name>[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "        <age>30</age>[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "        <salary>1234.5678</salary>[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "    </user>[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "    <user id="2">[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "        <name>Maria Joaquina</name>[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "        <age>25</age>[\n]"
+17:36:36.651 [Test worker] DEBUG org.apache.http.wire -  << "        <salary>2500</salary>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "        <endereco>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "            <rua>Rua dos bobos</rua>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "            <numero>0</numero>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "        </endereco>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "    </user>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "    <user id="3">[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "        <name>Ana Julia</name>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "        <age>20</age>[\n]"
+17:36:36.652 [Test worker] DEBUG org.apache.http.wire -  << "        <filhos>[\n]"
+17:36:36.653 [Test worker] DEBUG org.apache.http.wire -  << "            <name>Zezinho</name>[\n]"
+17:36:36.653 [Test worker] DEBUG org.apache.http.wire -  << "            <name>Luizinho</name>[\n]"
+17:36:36.653 [Test worker] DEBUG org.apache.http.wire -  << "        </filhos>[\n]"
+17:36:36.653 [Test worker] DEBUG org.apache.http.wire -  << "    </user>[\n]"
+17:36:36.653 [Test worker] DEBUG org.apache.http.wire -  << "</users>"
+17:36:36.654 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6c337618
+17:36:36.654 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+Maria Joaquina
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
